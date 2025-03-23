@@ -1,8 +1,12 @@
 /** @type {import('tailwindcss').Config} */
 export default {
-	content: ['./public/index.html', './src/**/*.{js,ts}'],
+	content: ['./public/**/*.html', './src/**/*.{js,ts}'],
 	theme: {
-		extend: {},
+		extend: {
+			fontFamily: {
+				tajawal: 'Tajawal'
+			  },
+		},
 	},
 	plugins: [],
 };

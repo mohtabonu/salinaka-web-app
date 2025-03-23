@@ -1,0 +1,529 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="../dist/index.css">
+    <title>Salinaka | Home</title>
+</head>
+<body>
+   <nav class="sticky top-0 flex items-center justify-between py-3 px-10 bg-neutral-100 shadow-sm z-10 mb-10">
+    <div class="flex items-center gap-10">
+        <img src="../img/logo-full.059e10fa5fedbfb65165e7565ed3936f.png" alt="">
+        <ul class="flex items-center gap-5">
+             <li data-page="home" class="links text-[1rem] cursor-pointer text-neutral-500 font-semibold hover:text-black focus:text-black">Home</li>
+             <li data-page="shop" class="links text-[1rem] cursor-pointer text-neutral-500 font-semibold hover:text-black focus:text-black">Shop</li>
+             <li data-page="featured" class="links text-[1rem] cursor-pointer text-neutral-500 font-semibold hover:text-black focus:text-black">Featured</li>
+             <li data-page="recommended" class="links text-[1rem] cursor-pointer text-neutral-500 font-semibold hover:text-black focus:text-black">Recommended</li>
+        </ul>
+    </div>
+    <div class="flex items-center">
+        <div class="flex items-center gap-4 border  border-neutral-400 w-[300px] py-2 px-3 me-2 bg-white">
+            <svg xmlns="http://www.w3.org/2000/svg" fill="#00000096" class="bi bi-search" viewBox="0 0 16 16" id="Search--Streamline-Bootstrap" height="16" width="16"><desc>Search Streamline Icon: https://streamlinehq.com</desc><path d="M11.742 10.344a6.5 6.5 0 1 0 -1.397 1.398h-0.001q0.044 0.06 0.098 0.115l3.85 3.85a1 1 0 0 0 1.415 -1.414l-3.85 -3.85a1 1 0 0 0 -0.115 -0.1zM12 6.5a5.5 5.5 0 1 1 -11 0 5.5 5.5 0 0 1 11 0" stroke-width="1"></path></svg>
+            <input type="text" placeholder="Search product..." class="outline-none font-semibold bg-white placeholder:text-neutral-400 ">
+        </div>
+            <span role="img" aria-label="shopping" style="font-size: 2rem; cursor: pointer;">
+                <svg viewBox="64 64 896 896" focusable="false" data-icon="shopping" width="1em" height="1em" fill="currentColor" aria-hidden="true">
+                    <path d="M832 312H696v-16c0-101.6-82.4-184-184-184s-184 82.4-184 184v16H192c-17.7 0-32 14.3-32 32v536c0 17.7 14.3 32 32 32h640c17.7 0 32-14.3 32-32V344c0-17.7-14.3-32-32-32zm-432-16c0-61.9 50.1-112 112-112s112 50.1 112 112v16H400v-16zm392 544H232V384h96v88c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-88h224v88c0 4.4 3.6 8 8 8h56c4.4 0 8-3.6 8-8v-88h96v456z"></path>
+                 </svg>
+            </span>
+        <button class="ms-[60px] bg-black text-white py-3 px-4 font-semibold hover:opacity-80 transition-all">Sign Up</button>
+        <button class="ms-4 bg-neutral-200 border border-neutral-300 text-neutral-500 py-3 px-4 font-semibold hover:bg-neutral-100 transition-all">Sign In</button>
+    </div>
+   </nav>
+
+
+     <!-- HOME PAGE -->
+        <div id="home-page" style="display: block;">
+          <section class="flex items-center justify-content-between mx-[100px] bg-neutral-200">
+           <div class="px-[5rem]">
+               <h1 class="text-[3.4rem] leading-[60px] max-w-[450px] mb-6"><strong>See</strong> everything with <strong>Clarity</strong></h1>
+               <p class="font-[600] leading-[20px] text-neutral-600 mb-8">Buying eyewear should leave you happy and good-looking, with money in your pocket. Glasses, sunglasses, and contacts—we’ve got your eyes covered.</p>
+                    <button data-page="shop" class="flex items-center gap-2  bg-black text-white py-3 px-4 font-semibold hover:opacity-80 transition-all">Shop Now 
+                      <span role="img" aria-label="arrow-right" class="anticon anticon-arrow-right"><svg viewBox="64 64 896 896" focusable="false" data-icon="arrow-right" width="1em" height="1em" fill="currentColor" aria-hidden="true"><path d="M869 487.8L491.2 159.9c-2.9-2.5-6.6-3.9-10.5-3.9h-88.5c-7.4 0-10.8 9.2-5.2 14l350.2 304H152c-4.4 0-8 3.6-8 8v60c0 4.4 3.6 8 8 8h585.1L386.9 854c-5.6 4.9-2.2 14 5.2 14h91.5c1.9 0 3.8-.7 5.2-2L869 536.2a32.07 32.07 0 000-48.4z"></path></svg></span>
+                    </button>
+           </div>
+           <div class="w-auto">
+               <img src="../img/banner-girl.789f1fa6f451ad26c5039fcbc049ace7.png" alt="" >
+           </div>
+          </section>
+          <section class="mx-[150px]">
+           <div class="flex items-center justify-between mt-[80px] mb-[20px]">
+               <h1 class="text-[2rem] font-semibold">Featured Products</h1>
+               <p data-page="featured" class="text-[20px] font-semibold underline cursor-pointer">See All</p>
+           </div>
+          
+            <div class="featuredCardsWrap grid grid-rows-2 grid-cols-3 gap-5" id="featuredCardsWrap">
+                <!-- <div class="border border-1 border-neutral-300 cursor-pointer">
+                    <div class="bg-neutral-200 px-4 w-auto">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="py-5 px-5">
+                        <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                        <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                    </div>
+                </div>
+                <div class="border border-1 border-neutral-300 cursor-pointer">
+                    <div class="bg-neutral-200 px-4 w-auto">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="py-5 px-5">
+                        <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                        <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                    </div>
+                </div>
+                <div class="border border-1 border-neutral-300 cursor-pointer">
+                    <div class="bg-neutral-200 px-4 w-auto">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="py-5 px-5">
+                        <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                        <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                    </div>
+                </div>
+                <div class="border border-1 border-neutral-300 cursor-pointer">
+                    <div class="bg-neutral-200 px-4 w-auto">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="py-5 px-5">
+                        <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                        <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                    </div>
+                </div>
+                <div class="border border-1 border-neutral-300 cursor-pointer">
+                    <div class="bg-neutral-200 px-4 w-auto">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="py-5 px-5">
+                        <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                        <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                    </div>
+                </div>
+                <div class="border border-1 border-neutral-300 cursor-pointer">
+                    <div class="bg-neutral-200 px-4 w-auto">
+                        <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                    </div>
+                    <div class="py-5 px-5">
+                        <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                        <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                    </div>
+                </div> -->
+            </div>
+          
+          </section>
+          <section class="mx-[150px] mb-[100px]">
+           <div class="flex items-center justify-between mt-[80px] mb-[20px]">
+               <h1 class="text-[2rem] font-semibold">Recommended Products</h1>
+               <p data-page="recommended" class="text-[20px] font-semibold underline cursor-pointer">See All</p>
+           </div>
+           <div class="recommendedCardsWrap grid grid-rows-2 grid-cols-3 gap-5" id="recommendedCardsWrap">
+               <!-- <div class="border border-1 border-neutral-300 cursor-pointer">
+                   <div class="bg-neutral-200 px-4 w-auto">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                   </div>
+                   <div class="py-5 px-5">
+                       <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                       <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                   </div>
+               </div>
+               <div class="border border-1 border-neutral-300 cursor-pointer">
+                   <div class="bg-neutral-200 px-4 w-auto">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                   </div>
+                   <div class="py-5 px-5">
+                       <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                       <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                   </div>
+               </div>
+               <div class="border border-1 border-neutral-300 cursor-pointer">
+                   <div class="bg-neutral-200 px-4 w-auto">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                   </div>
+                   <div class="py-5 px-5">
+                       <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                       <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                   </div>
+               </div>
+               <div class="border border-1 border-neutral-300 cursor-pointer">
+                   <div class="bg-neutral-200 px-4 w-auto">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                   </div>
+                   <div class="py-5 px-5">
+                       <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                       <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                   </div>
+               </div>
+               <div class="border border-1 border-neutral-300 cursor-pointer">
+                   <div class="bg-neutral-200 px-4 w-auto">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                   </div>
+                   <div class="py-5 px-5">
+                       <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                       <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                   </div>
+               </div>
+               <div class="border border-1 border-neutral-300 cursor-pointer">
+                   <div class="bg-neutral-200 px-4 w-auto">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                   </div>
+                   <div class="py-5 px-5">
+                       <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                       <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                   </div>
+               </div> -->
+           </div>
+          </section>
+        </div>
+     <!-- FEATURED PAGE -->
+        <div id="featured-page" style="display: none;">
+          <section class="flex  items-center justify-between mx-[100px] bg-neutral-200 px-[5.5rem]">
+           <div class="">
+               <h1 class="text-[3.4rem] leading-[60px] max-w-[450px] mb-6 font-semibold">Featured Products</h1>
+           </div>
+           <div class="w-auto">
+               <img src="../img/banner-guy.fbf4f0f7396fe31bonu.png" alt="" class="h-[400px]">
+           </div>
+          </section>
+          <section class="mx-[150px] my-[100px]">
+           <div class="featuredCardsWrap grid grid-rows-2 grid-cols-3 gap-5" id="featuredCardsWrap">
+               <!-- <div class="border border-1 border-neutral-300 cursor-pointer">
+                   <div class="bg-neutral-200 px-4 w-auto">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                   </div>
+                   <div class="py-5 px-5">
+                       <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                       <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                   </div>
+               </div>
+               <div class="border border-1 border-neutral-300 cursor-pointer">
+                   <div class="bg-neutral-200 px-4 w-auto">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                   </div>
+                   <div class="py-5 px-5">
+                       <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                       <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                   </div>
+               </div>
+               <div class="border border-1 border-neutral-300 cursor-pointer">
+                   <div class="bg-neutral-200 px-4 w-auto">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                   </div>
+                   <div class="py-5 px-5">
+                       <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                       <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                   </div>
+               </div>
+               <div class="border border-1 border-neutral-300 cursor-pointer">
+                   <div class="bg-neutral-200 px-4 w-auto">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                   </div>
+                   <div class="py-5 px-5">
+                       <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                       <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                   </div>
+               </div>
+               <div class="border border-1 border-neutral-300 cursor-pointer">
+                   <div class="bg-neutral-200 px-4 w-auto">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                   </div>
+                   <div class="py-5 px-5">
+                       <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                       <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                   </div>
+               </div>
+               <div class="border border-1 border-neutral-300 cursor-pointer">
+                   <div class="bg-neutral-200 px-4 w-auto">
+                       <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                   </div>
+                   <div class="py-5 px-5">
+                       <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                       <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                   </div>
+               </div> -->
+           </div>
+          </section>
+        </div>
+      <!-- RECOMMENDED PAGE -->
+        <div id="recommended-page" style="display: none;">
+           <section class="flex  items-center justify-between mx-[100px] bg-neutral-200 px-[5.5rem]">
+               <div class="">
+                   <h1 class="text-[3.4rem] leading-[60px] max-w-[450px] mb-6 font-semibold">Recommended Products</h1>
+               </div>
+               <div class="w-auto">
+                   <img src="../img/banner-girl-1.24e9b8f48d5a0ac32680edd194503695.png" alt="" class="h-[400px]">
+               </div>
+           </section>
+           <section class="mx-[150px] my-[100px]">
+             <div class="recommendedCardsWrap grid grid-rows-2 grid-cols-3 gap-5" id="recommendedCardsWrap" >
+                   <!-- <div class="border border-1 border-neutral-300 cursor-pointer">
+                       <div class="bg-neutral-200 px-4 w-auto">
+                           <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                       </div>
+                       <div class="py-5 px-5">
+                           <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                           <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                       </div>
+                   </div>
+                   <div class="border border-1 border-neutral-300 cursor-pointer">
+                       <div class="bg-neutral-200 px-4 w-auto">
+                           <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                       </div>
+                       <div class="py-5 px-5">
+                           <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                           <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                       </div>
+                   </div>
+                   <div class="border border-1 border-neutral-300 cursor-pointer">
+                       <div class="bg-neutral-200 px-4 w-auto">
+                           <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                       </div>
+                       <div class="py-5 px-5">
+                           <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                           <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                       </div>
+                   </div>
+                   <div class="border border-1 border-neutral-300 cursor-pointer">
+                       <div class="bg-neutral-200 px-4 w-auto">
+                           <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                       </div>
+                       <div class="py-5 px-5">
+                           <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                           <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                       </div>
+                   </div>
+                   <div class="border border-1 border-neutral-300 cursor-pointer">
+                       <div class="bg-neutral-200 px-4 w-auto">
+                           <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                       </div>
+                       <div class="py-5 px-5">
+                           <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                           <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                       </div>
+                   </div>
+                   <div class="border border-1 border-neutral-300 cursor-pointer">
+                       <div class="bg-neutral-200 px-4 w-auto">
+                           <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2F7l3FMZqY8JdfssalDgx2?alt=media&token=be15689c-e12c-4829-9d78-32395ef1e3f7" alt="" class="transition-transform duration-300 hover:scale-110">
+                       </div>
+                       <div class="py-5 px-5">
+                           <h1 class="font-semibold text-[25px]">Burnikk</h1>
+                           <p class="font-semibold text-[17px] text-neutral-500 italic">Sexbomb</p>
+                       </div>
+                   </div> -->
+               </div>
+           </section>
+        </div>
+        <!-- SHOP PAGE -->
+         <div id="shop-page" style="display: none;">
+             <div class="shopCardsWarp grid grid-rows-3 grid-cols-6 gap-6 mx-[100px] mb-10">
+                 <!-- <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div>
+                 <div class="cursor-pointer border border-1 border-neutral-400">
+                     <div class="bg-neutral-200 px-2">
+                         <img src="https://firebasestorage.googleapis.com/v0/b/salinaka-ecommerce.appspot.com/o/products%2Figsz61dwpUgqT51Qd1F7?alt=media&token=db2f442f-4c92-4175-b21a-be6a448bc501" alt="" class="transition-transform duration-300 hover:scale-110">
+                     </div>
+                     <div class="bg-white  text-center py-3">
+                         <h1 class="font-semibold mb-2">Sugat</h1>
+                         <p class="font-semibold text-neutral-500 italic mb-2">Betsin Maalat</p>
+                         <p class="font-semibold mb-2">$56.00</p>
+                     </div>
+                     <button class="bg-black text-white w-full py-2 hover:opacity-80 text-[14px] font-semibold">Add to Basket</button>
+                 </div> -->
+             </div>
+         </div>
+
+
+   <footer class="flex items-center justify-center flex-col bg-neutral-200 py-6">
+    <img src="../img/logo-full.059e10fa5fedbfb65165e7565ed3936f.png" alt="">
+    <p class="text-[14px] font-bold text-neutral-600 ms-8">© 2025</p>
+   </footer>
+</body>
+<script src="../dist/index.js"></script>
+</html>
